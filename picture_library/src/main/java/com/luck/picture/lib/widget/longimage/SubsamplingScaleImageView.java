@@ -303,8 +303,8 @@ public class SubsamplingScaleImageView extends View {
                     setImage(ImageSource.asset(assetName).tilingEnabled());
                 }
             }
-            if (typedAttr.hasValue(R.styleable.SubsamplingScaleImageView_src)) {
-                int resId = typedAttr.getResourceId(R.styleable.SubsamplingScaleImageView_src, 0);
+            if (typedAttr.hasValue(R.styleable.SubsamplingScaleImageView_ssrc)) {
+                int resId = typedAttr.getResourceId(R.styleable.SubsamplingScaleImageView_ssrc, 0);
                 if (resId > 0) {
                     setImage(ImageSource.resource(resId).tilingEnabled());
                 }

@@ -1,17 +1,18 @@
-# PictureSelector 2.0 
+# PictureSelector 3.0.0 支持 androidx
    一款针对android平台下的图片选择器，支持从相册或拍照选择图片或视频、音频，支持动态权限获取、裁剪(单图or多图裁剪)、压缩、主题自定义配置等功能、适配android 6.0+系统的开源图片选择框架。<br>  
   
-  <br>项目会一直维护(有bug修复完成，一般周末会更新(不好意思，最近比较忙有时间会解决~有问题先提issue))，有bug请描述清楚，并请Issues会第一时间修复，个人QQ 893855882@qq.com  希望用得着的朋友点个star。 <br>
+<!--  <br>项目会一直维护(有bug修复完成，一般周末会更新(不好意思，最近比较忙有时间会解决~有问题先提issue))，有bug请描述清楚，并请Issues会第一时间修复，个人QQ 893855882@qq.com  希望用得着的朋友点个star。 <br>
  Android开发交流 群一 619458861 (已满) <br> 
  Android开发交流 群二 679824206 (已满) <br> 
-   
-  [我的博客地址](http://blog.csdn.net/luck_mw) 
+   -->
+<!--  [我的博客地址](http://blog.csdn.net/luck_mw) -->
   
-[![](https://jitpack.io/v/LuckSiege/PictureSelector.svg)](https://jitpack.io/#LuckSiege/PictureSelector)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/LuckSiege)
+[![](https://jitpack.io/v/kongqw/PictureSelector.svg)](https://jitpack.io/#kongqw/PictureSelector)
+
+<!--[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/LuckSiege)
 [![CSDN](https://img.shields.io/twitter/url/http/blog.csdn.net/luck_mw.svg?style=social)](http://blog.csdn.net/luck_mw)
 [![I](https://img.shields.io/github/issues/LuckSiege/PictureSelector.svg)](https://github.com/LuckSiege/PictureSelector/issues)
-[![Star](https://img.shields.io/github/stars/LuckSiege/PictureSelector.svg)](https://github.com/LuckSiege/PictureSelector)
+[![Star](https://img.shields.io/github/stars/LuckSiege/PictureSelector.svg)](https://github.com/LuckSiege/PictureSelector)-->
 
 ## 目录
 -[功能特点](#功能特点)<br>
