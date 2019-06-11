@@ -4,8 +4,8 @@ android {
     compileSdkVersion cfgs.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion cfgs.minSdkVersion
-        targetSdkVersion cfgs.targetSdkVersion
+        minSdkVersion 14
+        targetSdkVersion 28
         versionCode cfgs.ucropVersionCode
         versionName cfgs.ucropVersionName
 
@@ -31,8 +31,8 @@ android {
 
 dependencies {
     //noinspection GradleCompatible
-    compile 'androidx.appcompat:appcompat:1.0.0'
+    compile 'androidx.appcompat:appcompat:1.0.2'
     //noinspection GradleCompatible
     compile 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation "com.github.bumptech.glide:glide:${cfgs.glide}"
+    implementation "com.github.bumptech.glide:glide:4.9.0"
 }
