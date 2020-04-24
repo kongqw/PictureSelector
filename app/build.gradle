@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion cfgs.compileSdkVersion
@@ -19,8 +22,24 @@ android {
 }
 
 dependencies {
-    compile project(':picture_library')
+    implementation project(':picture_library')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha02'
+
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    // glide
+    kapt 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+
+
+    // debugImplementation because LeakCanary should only run in debug builds.
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
+    debugImplementation 'com.github.markzhai:blockcanary-android:1.5.0'
+
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:2.2'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
 }

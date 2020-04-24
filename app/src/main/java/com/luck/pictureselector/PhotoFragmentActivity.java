@@ -23,12 +23,9 @@ public class PhotoFragmentActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             // 添加显示第一个fragment
             fragment = new PhotoFragment();
-            getSupportFragmentManager().beginTransaction().add(R.id.tab_content, fragment,
-                    PictureConfig.FC_TAG).show(fragment)
-                    .commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.tab_content, fragment, PictureConfig.FC_TAG).show(fragment).commit();
         } else {
-            fragment = (PhotoFragment) getSupportFragmentManager()
-                    .findFragmentByTag(PictureConfig.FC_TAG);
+            fragment = (PhotoFragment) getSupportFragmentManager().findFragmentByTag(PictureConfig.FC_TAG);
         }
         // 清空图片缓存，包括裁剪、压缩后的图片 注意:必须要在上传完成后调用 必须要获取权限
         RxPermissions permissions = new RxPermissions(this);
